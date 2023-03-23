@@ -2,16 +2,24 @@ import React from 'react';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import data from './data'
 
-function App() {
+export default function App() {
   //<Cards />
+  const cards = data.map(item => {
+    return(
+      <Cards 
+        {...item}
+      />
+    )
+  })
   return (
     <div className="App" id='app'>
       <Header />
-      <Cards />
+      <section className='cards-list'>
+        {cards}
+      </section>
       <Footer />
     </div>
   );
 }
-
-export default App;
