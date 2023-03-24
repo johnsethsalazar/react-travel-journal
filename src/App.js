@@ -4,8 +4,8 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import data from './data'
 
+
 export default function App() {
-  //<Cards />
   const cards = data.map(item => {
     return(
       <Cards 

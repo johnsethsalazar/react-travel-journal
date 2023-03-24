@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+h1{
+  font-size: 14px;
+}
+
 #header{
   background: green;
   align-items: center;
@@ -23,4 +27,15 @@
   gap: 10px;
   height: 55px;
   justify-content: center;
+}
+
+.img-fluid{
+  object-fit: cover;
+  height: 100%;
+  max-width: 85%;
+}
+
+.col-md-4 {
+  height: auto;
+  overflow: hidden;
 }
