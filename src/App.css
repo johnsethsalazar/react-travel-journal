@@ -76,6 +76,10 @@ small{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4) !important;
 }
 
+#footer > small > a{
+  color: white;
+}
+
 /*-----------Media Queries (Medium Devices)--------------------*/
 @media screen and (max-width: 1024px){
   .img-fluid{
