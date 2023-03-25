@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +7,30 @@
   font-family: "Inter", sans-serif;
 }
 
+img, svg{
+  vertical-align: sub;
+  color: red;
+  font-size: 21px;
+}
+
+body{
+  background: #d7cec7;
+}
+
 h1{
+  font-size: 45px;
+  font-family: 'Cookie';
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+small{
   font-size: 14px;
+  letter-spacing: 4px;
 }
 
 #header{
-  background: green;
+  background: #565656;
   align-items: center;
   color: white;
   display: flex;
@@ -20,7 +40,7 @@ h1{
 }
 
 #footer{
-  background: green;
+  background: #565656;
   align-items: center;
   color: white;
   display: flex;
@@ -38,4 +58,43 @@ h1{
 .col-md-4 {
   height: auto;
   overflow: hidden;
+}
+
+.card-title{
+  font-family: 'Cookie';
+  font-size: 32px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.mb-3{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.mb-3:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+/*-----------Media Queries (Medium Devices)--------------------*/
+@media screen and (max-width: 1024px){
+  .img-fluid{
+    padding: 1em 0em 1em 0em;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .img-fluid{
+    padding: 1em 0em 1em 0em;
+  }
+}
+
+/*-----------Media Queries (Small Devices)--------------------*/
+@media screen and (max-width: 600px){
+  h1{
+    font-size: 38px;
+  }
+  .img-fluid{
+    width: inherit;
+  }
 }
